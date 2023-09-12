@@ -34,8 +34,8 @@ const Help = () => {
       <p className="font-cinzel text-xl sm:text-2xl lg:text-3xl text-center font-semibold">
         HOW WE HELP YOU
       </p>
-      <div className="container mt-5 flex flex-grow px-5 overflow-x-auto no-scrollbar">
-        <div className="flex flex-row gap-5 ">
+      <div className="px-5 mt-5 flex flex-grow  overflow-x-auto no-scrollbar">
+        <div className="flex flex-row gap-3 ">
           {info.map((data, index) => (
             <HelpCardComponent
             index={index}

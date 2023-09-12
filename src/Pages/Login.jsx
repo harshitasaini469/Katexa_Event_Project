@@ -3,8 +3,7 @@ import Form from '../components/Login/Form';
 
 const Login = () => {
   return (
-    
-  <div className=' relative flex justify-center items-center w-screen h-screen border bg-center bg-contain bg-no-repeat ' style={{ backgroundImage: "url(/LoginForm/bg.png)" }}>
+  <div className=' relative flex justify-center items-center w-screen h-screen  bg-center bg-contain bg-no-repeat ' style={{ backgroundImage: "url(/LoginForm/bg.png)" }}>
     <div className=' w-[55vw] flex flex-col self-center items-center relative'>
     <img src="/LoginForm/loginImage1.svg" className=' w-20 md:w-24 lg:w-28 absolute z-40 -top-16 lg:-top-20' alt="" />
     <Form />

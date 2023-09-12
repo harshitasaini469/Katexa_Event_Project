@@ -12,7 +12,7 @@ const Hero = () => {
         <div class="card-img-overlay flex flex-col justify-center  items-center  ">
           <div className="flex flex-col justify-center gap-5  items-center h-full">
             <div className="text-center  ">
-            <h5 class="card-title text-2xl md:text-3xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800 to-pink-600 tracking-widest">yoga & health</h5>
+            <h5 class="card-title text-2xl md:text-3xl lg:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800 to-pink-600 tracking-widest">yoga & health</h5>
             <p class="card-text text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800 to-pink-600 tracking-widest">
               calmness & tranquility in one place
             </p>

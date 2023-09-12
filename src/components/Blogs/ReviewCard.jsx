@@ -2,7 +2,7 @@ import React from 'react'
 
 const ReviewCard = () => {
   return (
-    <div class="card flex flex-col md:flex-row gap-3 border-2 w-11/12  bg-transparent text-white  border-purple-700 px-3  lg:px-4 py-3 font-cinzel  mx-auto" >
+    <div class="card flex flex-col md:flex-row gap-3 border-2 w-10/12  bg-transparent text-white  border-purple-700  p-2 py-3 font-cinzel  mx-auto" >
   <img class="card-img-top w-2/3 sm:w-1/2 md:w-1/3 mx-auto " src='Blogs/review/reviewcardimg.png' alt="Card image cap"/>
   <div class="card-body text-center">
     <h5 class="card-title text-xl lg:text-3xl font-semibold">samy ray</h5>

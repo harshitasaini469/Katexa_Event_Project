@@ -3,7 +3,7 @@ import React from "react";
 const Booking = () => {
   return (
     <div className="mt-32 relative font-cinzel">
-      <img src="HomeCustomers/bookings.png" alt="" className="w-52  md:w-72 absolute z-20 left-2  md:left-8 transform -translate-y-20 md:-translate-y-28 " />
+      <img src="/HomeCustomers/bookings.png" alt="" className="w-52  md:w-72 absolute z-20 left-2  md:left-8 transform -translate-y-20 md:-translate-y-28 " />
 
       <div className="relative z-10 top-4 w-10/12 h-fit  py-5 mx-auto  border-1 border-pink-300 mt-24 font-cinzel  flex flex-col space-y-8 items-center justify-center rounded-lg">
       <p className="w-min md:text-2xl whitespace-wrap absolute top-0 ml-2 left-16   font-semibold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-700 to-pink-600 ">Grab your tickets now</p>

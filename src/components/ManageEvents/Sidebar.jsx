@@ -42,7 +42,7 @@ const Sidebar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <div className="relative w-24 min-h-screen overflow-y-auto overflow-x-auto z-10   ">
+    <div className="relative w-24 min-h-screen overflow-y-auto overflow-x-auto z-10  no-scrollbar  ">
       <button
         data-drawer-target="logo-sidebar"
         data-drawer-toggle="logo-sidebar"
