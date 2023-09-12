@@ -4,11 +4,11 @@ import Sidebar from "../components/ManageEvents/Sidebar";
 import ManageEvents from "../components/ManageEvents/ManageEvents";
 const ManageEventsPage = () => {
   return (
-    <div className="w-screen h-fit bg-black font-cinzel">
+    <div className="  bg-black font-cinzel w-full overflow-x-hidden overflow-y-auto ">
       <Hero />
-      <button className="m-4 w-fit flex items-center ms-auto  bg-gradient-to-r from-purple-500 to-pink-600  px-3 py-2 me-5 rounded-full font-semibold">
+      <button className="m-4 w-fit flex gap-2 items-center ms-auto  bg-gradient-to-r from-purple-500 to-pink-600  px-3 py-2 me-5 rounded-full font-semibold">
         <svg
-          className="w-8 "
+          className="w-5 md:w-8 "
           viewBox="0 0 50 50"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -36,10 +36,10 @@ const ManageEventsPage = () => {
           />
         </svg>
 
-        <p className=" ">Notifications</p>
+        <p className=" text-sm sm:text-lg ">Notifications</p>
       </button>
-      <div className="flex ">
-        <Sidebar />
+      <div className="flex  relative   ">
+        <Sidebar/>
         <ManageEvents />
       </div>
     </div>

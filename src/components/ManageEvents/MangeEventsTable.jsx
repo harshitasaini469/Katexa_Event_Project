@@ -47,7 +47,7 @@ const ManageEventsTable = ({ events, onPublish, onDelete,onEdit }) => {
         // Add more dummy data as needed
       ];
   return (
-    <div className="overflow-x-auto w-full ">
+    <div className="overflow-x-auto min-w-screen ">
       <table className="min-w-full border-collapse table-auto text-white">
         <thead className="border-1 border-pink-700 rounded-xl ">
           <tr >

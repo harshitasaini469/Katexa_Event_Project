@@ -12,7 +12,7 @@ import ManageEarningsPage from './Pages/MangeEarningsPage'
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-black w-screen h-screen p-0 m-0 ">
       <Router>
       <Navbar />
       <Routes>
@@ -23,10 +23,11 @@ function App() {
         <Route path="/manage-events" element={<ManageEventsPage />} />
         <Route path="/manage-earnings" element={<ManageEarningsPage />} />
       </Routes>
-      <Footer />
     </Router>
-{/* <Login/> */}
+    <Footer />
+
     {/* <Checkout/> */}
+    {/* <Login/> */}
 
     </div>
   );

@@ -31,7 +31,7 @@ const Help = () => {
 
   return (
     <div className="text-white w-full">
-      <p className="font-cinzel text-3xl text-center font-semibold">
+      <p className="font-cinzel text-xl sm:text-2xl lg:text-3xl text-center font-semibold">
         HOW WE HELP YOU
       </p>
       <div className="container mt-5 flex flex-grow px-5 overflow-x-auto no-scrollbar">

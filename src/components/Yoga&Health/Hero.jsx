@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative h-[100vh] bg-black font-cinzel">
+    <div className="relative h-[80vh]  bg-black font-cinzel">
       <div class="absolute -top-5  card bg-black  text-white w-full h-full ">
         <img
           class="card-img h-full w-full"
@@ -11,16 +11,16 @@ const Hero = () => {
         />
         <div class="card-img-overlay flex flex-col justify-center  items-center  ">
           <div className="flex flex-col justify-center gap-5  items-center h-full">
-            <div className="text-center ">
-            <h5 class="card-title text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800 to-pink-600 tracking-widest">yoga & health</h5>
-            <p class="card-text text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800 to-pink-600 tracking-widest">
+            <div className="text-center  ">
+            <h5 class="card-title text-2xl md:text-3xl lg:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800 to-pink-600 tracking-widest">yoga & health</h5>
+            <p class="card-text text-base sm:text-xl md:text-2xl lg:text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-fuchsia-800 to-pink-600 tracking-widest">
               calmness & tranquility in one place
             </p>
             </div>
       
-            <button className="text-lg font-semibold bg-gradient-to-r from-fuchsia-700 to-pink-600 text-black px-4 py-3 rounded-lg ">book your seats now</button>
+            <button className="text-sm sm:text-base md:text-lg font-semibold bg-gradient-to-r from-fuchsia-700 to-pink-600 text-black p-2 md:p-3 rounded-lg ">book your seats now</button>
           </div>
-          <div className="flex mt-auto  gap-3  w-6/12 items-center bg-white rounded-full px-3 py-3">
+          <div className="flex mt-auto  gap-3 sm:w-1/2  md:w-6/12 items-center bg-white rounded-full p-2 md:p-3">
             <svg
               className="w-7 h-7"
               viewBox="0 0 50 50"
@@ -39,7 +39,7 @@ const Hero = () => {
               type="text"
               name=""
               id=""
-              className="focus:outline-none w-full text-sm"
+              className="focus:outline-none w-full text-xs sm:text-sm"
               placeholder="SEARCH FOR MUSICAL EVENTS"
             />
           </div>

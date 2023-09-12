@@ -26,38 +26,43 @@ const FeaturedEvents = () => {
   ];
   return (
     <div className="font-cinzel container w-10/12 h-10/12 mt-20">
-      <p className="text-white text-3xl text-center font-medium">
+      <p className="text-white text-xl md:text-2xl lg:text-3xl text-center font-medium">
         Featured Events of the Week
       </p>
-      <div className="grid grid-rows-3 grid-flow-col gap-4 mt-5">
-        <div className="relative row-span-2   ">
+      <div className=" mt-5 flex flex-col md:flex-row justify-center items-center gap-3">
+        <div className="flex flex-col gap-2">
+        <div className="  ">
           <EventCard
             bg={eventList[0].bg}
             title={eventList[0].title}
             desc={eventList[0].desc}
           />
         </div>
-        <div className="relative row-span-1 ">
+        <div className=" ">
           <EventCard
             bg={eventList[1].bg}
             title={eventList[1].title}
             desc={eventList[1].desc}
           />
         </div>
-        <div className="relative col-span-2 row-span-1">
+        </div>
+       <div>
+       <div className="flex flex-col gap-2">
           <EventCard
             bg={eventList[2].bg}
             title={eventList[2].title}
             desc={eventList[2].desc}
           />
         </div>
-        <div className="relative col-span-2 row-span-2">
+        <div className="">
           <EventCard
             bg={eventList[3].bg}
             title={eventList[3].title}
             desc={eventList[3].desc}
           />
         </div>
+       </div>
+        
       </div>
     </div>
   );

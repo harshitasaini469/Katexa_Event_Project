@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const Navbar = () => {
+  const [isNavbarOpen,setNavbarOpen]=useState(false)
   const [isCategoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
   const [isLoginDropdownOpen, setLoginDropdownOpen] = useState(false);
 
@@ -14,34 +15,45 @@ const Navbar = () => {
   const closeCategoryDropdown = () => {
     setCategoryDropdownOpen(false);
   };
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  // Function to open the menu
+  const openMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  // Function to close the menu
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
   let login = true;
   return (
-    <nav class="fixed  w-full z-40 top-3 left-0 font-cinzel py-2 px-5  ">
+    <nav class="fixed  w-full z-40 top-3 left-0 font-cinzel py-2 px-3  ">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto text-lg ">
         <a href="#" class="flex items-center">
-          <img src="/logo.png" alt="" className="w-36" />
+          <img src="/logo.png" alt="" className=" w-24 md:w-32 lg:w-36" />
         </a>
         <div class="flex md:order-2">
-          <div className="flex gap-3 items-center ">
+          <div className="flex gap-2 lg:gap-3 items-center ">
             {!login ? (
               <button className="bg-gradient-to-r from-fuchsia-500 to-pink-600 w-fit py-2 px-4 text-sm font-medium rounded-xl text-white focus:outline-none ">
                 LOG IN
               </button>
             ) : (
-              <div className="flex gap-3 items-center">
+              <div className="flex gap-1 md:gap-2 lg:gap-3 items-center">
                 <img
                   src="/navbarProfile.png"
                   alt=""
-                  className="rounded-full w-14"
+                  className="rounded-full w-9 md:w-10 lg:w-14"
                 />
-                <p className="text-white font-semibold font-cinzel text-xl">
+                <p className="text-white font-semibold font-cinzel text-sm sm:text-base md:text-lg lg:text-xl">
                   Martha
                 </p>
               </div>
             )}
             <div className="flex  gap-1">
               <svg
-                className="w-7 h-7"
+                className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7"
                 viewBox="0 0 50 50"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +79,7 @@ const Navbar = () => {
               </svg>
               <div className="relative inline-block text-left">
                 <svg
-                  className="w-7 h-7 cursor-pointer"
+                  className="w-5 h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 cursor-pointer"
                   viewBox="0 0 40 40"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,9 +131,10 @@ const Navbar = () => {
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center m-1 p-2 w-8 h-8 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
+            onClick={openMenu}
           >
             <span class="sr-only">Open main menu</span>
             <svg
@@ -142,28 +155,28 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          class={`"items-center justify-between  md:bg-transparent w-full md:flex md:w-auto md:order-1" ${isMenuOpen?'block transition-all duration-300 ease-in-out bg-white text-black rounded-lg':'hidden'}`}
           id="navbar-sticky"
         >
-          <ul class="flex flex-col  md:p-0 font-semibold text-white rounded-lg  md:flex-row md:space-x-8 md:mt-0 ">
+          <ul class="flex flex-col  md:p-0 font-semibold  rounded-lg  md:flex-row md:space-x-8 md:mt-0 ">
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-white     md:p-0 "
+                class="block py-2 pl-3 pr-4   md:p-0 hover:bg-pink-700/25 hover:text-black "
                 aria-current="page"
               >
                 Home
               </a>
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 md:p-0 text-white ">
+              <a href="#" class="block py-2 pl-3 pr-4 md:p-0  hover:bg-pink-700/25 hover:text-black ">
                 VENUE
               </a>
             </li>
             <li className="relative inline-block">
               <a
                 href="#"
-                className="block py-2 pl-3 pr-4 md:p-0 text-white"
+                className="block py-2 pl-3 pr-4 md:p-0 hover:bg-pink-700/25 hover:text-black "
                 onMouseEnter={toggleCategoryDropdown}
                 onMouseLeave={closeCategoryDropdown}
               >
@@ -203,7 +216,7 @@ const Navbar = () => {
               )}
             </li>
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4  md:p-0 text-white ">
+              <a href="#" class="block py-2 pl-3 pr-4  md:p-0  hover:bg-pink-700/25 hover:text-black  ">
                 BLOGS
               </a>
             </li>

@@ -2,16 +2,16 @@ import React from "react";
 
 const ExcerciseCard = ({daysLeft,img, exercise, instructor, date, location }) => {
   return (
-    <div class="relative z-10 card w-80 font-cinzel  border-0 rounded-2xl">
+    <div class="relative z-10 card w-64 md:w-72 lg:w-80 font-cinzel  border-0 rounded-2xl">
       <img class="card-img-top w-full " src={img} alt="Card image cap" />
       <div class="card-body flex flex-col gap-3  ">
       <div className="absolute top-0 right-0 px-3 py-1 z-40 rounded-tr-2xl rounded-bl-2xl bg-gradient-to-r from-fuchsia-500   to-pink-600 font-semibold"><p>{daysLeft}</p></div>
 
-        <div className="flex gap-4 items-center pl-3 ">
-          <h5 class="card-title font-semibold whitespace-nowrap">{exercise}</h5>
-          <p class="card-text flex  w-1/3 space-x-2 items-center font-semibold text-center"><img src="/yoga&health/line.png" alt="" /><span>{instructor}</span></p>
+        <div className="flex flex-col  md:flex-row  md:gap-4 md:items-center lg:pl-3 ">
+          <h5 class="card-title font-semibold whitespace-nowrap ">{exercise}</h5>
+          <p class="card-text  flex space-x-2 items-center font-semibold text-center"><img src="/yoga&health/line.png" alt="" /><span className="md:w-min">{instructor}</span></p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex items-center gap-3">
           <svg
             className="w-5"
             viewBox="0 0 26 30"
@@ -42,7 +42,7 @@ const ExcerciseCard = ({daysLeft,img, exercise, instructor, date, location }) =>
 
           <p className="text-sm font-semibold text-sky-400">{date}</p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex items-center gap-3">
           <svg
     className="w-5"
             viewBox="0 0 22 27"

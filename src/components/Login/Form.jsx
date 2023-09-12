@@ -20,14 +20,14 @@ const Form = () => {
     console.log("Form data submitted:", formData);
   };
   return (
-    <div className="relative z-10 font-cinzel w-[30vw] h-[55vh] m-auto rounded-xl text-black border-l-4 border-b-4 border-pink-500 flex items-center justify-center bg-white py-12 px-5 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
+    <div className="relative z-10 font-cinzel w-[60vw] sm:w-[50vw] lg:w-[30vw] h-[55vh] m-auto rounded-xl text-black border-l-4 border-b-4 border-pink-500 flex items-center justify-center bg-white px-4 lg:px-8">
+      <div className="max-w-md w-full space-y-8 ">
         <div>
-          <h2 className="mt-6  text-center text-2xl font-bold">
+          <h2 className="mt-6  text-center text-base md:text-xl lg:text-2xl font-bold">
             FILL YOUR DETAILS
           </h2>
         </div>
-        <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
+        <form className="mt-8 space-y-6 text-sm sm:text-base " onSubmit={handleSubmit}>
           <div className="rounded-md shadow-sm space-y-4">
             <div>
               <label htmlFor="username" className="font-semibold">
@@ -62,7 +62,7 @@ const Form = () => {
           <div className="flex justify-center">
             <button
               type="submit"
-              className="group bg-gradient-to-r from-fuchsia-500   to-pink-600  relative w-fit flex  justify-center py-2 px-5 border border-transparent text-lg font-medium rounded-2xl text-white  focus:outline-none "
+              className="group bg-gradient-to-r from-fuchsia-500 to-pink-600  relative w-fit flex  justify-center py-1 px-3 sm:py-2 sm:px-5 border border-transparent text-sm md:text-lg font-medium rounded-2xl text-white  focus:outline-none "
             >
               Log In
             </button>

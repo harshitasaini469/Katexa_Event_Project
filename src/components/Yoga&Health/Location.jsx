@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 const Location = () => {
   return (
     <div className="font-cinzel mt-24 container w-11/12">
-      <button className="bg-gradient-to-r from-fuchsia-500 to-pink-600 px-5 py-3 rounded-xl text-xl font-semibold ">
+      <button className="bg-gradient-to-r from-fuchsia-500 to-pink-600 p-2 md:p-3 rounded-xl  text-sm sm:text-base md:text-xl font-semibold ">
         Location
       </button>
       <div className="mt-3 w-full h-[500px] ">

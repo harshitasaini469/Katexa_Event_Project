@@ -52,7 +52,7 @@ const ManageEarningTable = ({ earnings }) => {
       
       
   return (
-    <div className="overflow-x-auto">
+    <div className="overflow-x-auto ">
       <table className="min-w-full border-collapse table-auto text-white">
         <thead className="border-1 border-pink-700">
           <tr>

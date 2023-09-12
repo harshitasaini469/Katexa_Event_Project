@@ -4,13 +4,13 @@ const Description = () => {
   return (
     <div className="container mt-24 font-sans relative h-10/12 ">
       <img src="/yoga&health/descimg.png" alt="" className="w-full h-full z-10   " />
-      <div className="bg-white rounded-xl px-3 py-3 h-72 -mt-12 w-11/12 mx-auto z-30 relative flex flex-col justify-between px-5   ">
-        <div className="flex justify-between items-center text-2xl">
-          <p className="font-semibold">Description</p>
-          <div className="flex gap-5">
-          <div className="flex gap-3">
+      <div className="bg-white rounded-xl px-3 py-3 h-fit md:h-72 -mt-9 md:-mt-12 w-11/12 mx-auto z-30 relative flex flex-col justify-between px-5   ">
+        <div className="flex flex-col gap-2 md:flex-row md:justify-between md:items-center ">
+          <p className="font-semibold text-xl md:text-2xl">Description</p>
+          <div className="flex  flex-wrap gap-2 md:gap-5 ms-auto text-xs sm:text-sm md:text-base font-semibold">
+          <div className="flex gap-1 md:gap-3 ">
             <svg
-              className="w-5"
+              className="w-3 sm:w-5"
               viewBox="0 0 26 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -37,11 +37,11 @@ const Description = () => {
               />
             </svg>
 
-            <p className="text-base font-semibold text-sky-400">20th Sept 2023</p>
+            <p className=" text-sky-400">20th Sept 2023</p>
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-1 md:gap-3">
             <svg
-              className="w-5"
+              className="w-3 sm:w-5"
               viewBox="0 0 22 27"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -56,14 +56,14 @@ const Description = () => {
               />
             </svg>
 
-            <p className="text-base text-pink-600 font-semibold">
+            <p className=" text-pink-600 ">
               Star Stadium, Kolkata
             </p>
           </div>
           </div>
         </div>
         <div>
-          <p className="text-2xl text-justify">
+          <p className=" text-sm sm:text-lg md:text-xl lg:text-2xl text-justify mt-2">
             With adopting yoga in life you acn get relief from daily stress,
             muscle pain, & all other problems in your life. Mental health & fit
             body is the key to success so be our guest to reduce all the
@@ -71,15 +71,15 @@ const Description = () => {
             world.
           </p>
         </div>
-        <div className="flex justify-between items-center" >
+        <div className="flex justify-between items-center mt-3" >
             <div className="flex">
-            <img src="/yoga&health/pf1.png" alt="" className="w-12 h-12 -mr-4 z-5 " />
-          <img src="/yoga&health/pf2.png" alt="" className="w-12 h-12 -mr-4 z-10" />
-          <img src="/yoga&health/pf3.png" alt="" className="w-12 h-12 -mr-4 z-20"/>
-          <img src="/yoga&health/pf4.png" alt="" className="w-12 h-12 -mr-4 z-30" />
-          <div className="rounded-full bg-pink-600 text-black w-12 h-12 text-center p-2 font-medium text-lg z-40 relative" >7+</div>
+            <img src="/yoga&health/pf1.png" alt="" className="w-8 h-8 sm:w-10 sm:h-10  md:w-12 md:h-12 -mr-4 z-5 " />
+          <img src="/yoga&health/pf2.png" alt="" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12  -mr-4 z-10" />
+          <img src="/yoga&health/pf3.png" alt="" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12  -mr-4 z-20"/>
+          <img src="/yoga&health/pf4.png" alt="" className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12  -mr-4 z-30" />
+          <div className="rounded-full bg-pink-600 text-black w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-center p-2 font-medium text-xs sm:text-sm md:text-lg z-40 relative" >7+</div>
             </div>
-         <p className="text-lg text-gray-600 font-semibold">10 going</p>
+         <p className=" text-sm sm:text-base md:text-lg text-gray-600 font-semibold whitespace-nowrap">10 going</p>
         </div>
       </div>
     </div>

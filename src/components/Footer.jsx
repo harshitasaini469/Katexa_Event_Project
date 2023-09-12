@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="mt-auto bg-black flex flex-col justify-center w-full h-full font-cinzel text-center text-white space-y-3 py-5 ">
+    <div className="mt-auto bg-black flex flex-col justify-center min-w-screen min-h-screen  font-cinzel text-center text-white space-y-3 py-5 ">
       <img src="/logo.png" alt="" className="mx-auto" />
       <p className="text-pink-500 text-xl  font-bold">
         Unlock Memorable Experience

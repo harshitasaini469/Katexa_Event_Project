@@ -91,7 +91,7 @@ const EventCategories = () => {
   const secondGroup = events.slice(midIndex);
   return (
     <div className="font-cinzel mt-24">
-      <p className="text-white text-4xl text-center font-medium">Our event categories</p>
+      <p className="text-white text-xl md:text-2xl lg:text-4xl text-center font-medium">Our event categories</p>
       <div className="container mt-5 flex flex-grow px-5 overflow-x-auto no-scrollbar">
         <div className="flex flex-row gap-5">
           {firstGroup.map((event) => (

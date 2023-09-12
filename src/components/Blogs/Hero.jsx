@@ -7,7 +7,7 @@ const Hero = () => {
         className="absolute -top-20 flex flex-col justify-center items-center bg-center bg-cover bg-no-repeat w-full h-full"
         style={{ backgroundImage: "url(/Blogs/blogsbg.png)" }}
       >
-        <div className="flex flex-col justify-between w-full h-4/5  text-white text-2xl font-bold text-center ">
+        <div className="flex flex-col justify-between w-full h-4/5  text-white text-base md:text-lg lg:text-2xl font-bold text-center ">
           <div className="flex flex-col my-auto self-center items-center justify-center w-3/5 ">
           <p>BLOGS</p>
           <p>
@@ -15,7 +15,7 @@ const Hero = () => {
             through our Engaging Blog."
           </p>
           </div>
-          <div className="mx-auto  flex gap-3  w-6/12 items-center bg-white rounded-full px-5 py-3">
+          <div className="mx-auto  flex gap-1 sm:gap-3 w-10/12 text-xs sm:text-sm  sm:w-6/12 items-center bg-white rounded-full p-1 sm:p-2 md:p-2 lg:p-3">
         <svg
           className="w-7 h-7"
           viewBox="0 0 50 50"
@@ -34,10 +34,10 @@ const Hero = () => {
           type="text"
           name=""
           id=""
-          className="focus:outline-none w-full text-sm"
+          className="focus:outline-none w-full "
           placeholder="SEARCH FOR MUSICAL EVENTS"
         />
-        <button className="flex bg-gradient-to-r from-fuchsia-500  to-pink-600 rounded-xl px-4 py-2 text-sm font-semibold text-sm gap-2 text-white items-center">
+        <button className="flex bg-gradient-to-r from-fuchsia-500  to-pink-600 rounded-xl px-2 py-1 sm:px-4 sm:py-2  font-semibold  gap-2 text-white items-center">
           <span>FILTER</span>
           <svg
             className="w-6 h-6"
