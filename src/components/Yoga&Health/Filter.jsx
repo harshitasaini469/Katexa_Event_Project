@@ -2,7 +2,7 @@ import React from "react";
 
 const Filter = () => {
   return (
-    <div className="border-2 border-pink-700  w-fit min-h-screen  px-5 py-5 text-white font-cinzel text-xl flex flex-col gap-4 rounded-xl">
+    <div className="border-2 border-pink-700  w-fit min-h-screen  p-4 text-white font-cinzel text-xl flex flex-col gap-4 rounded-xl">
         <Input field={'search event'} placeholder={'Type Event Name/Venue/City/State'}/>
       
 

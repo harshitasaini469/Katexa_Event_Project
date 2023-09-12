@@ -15,7 +15,7 @@ const Hero = () => {
             through our Engaging Blog."
           </p>
           </div>
-          <div className="mx-auto  flex gap-1 sm:gap-3 w-10/12 text-xs sm:text-sm  sm:w-6/12 items-center bg-white rounded-full p-1 sm:p-2 md:p-2 lg:p-3">
+          <div className="mx-auto  flex gap-1 sm:gap-3 w-10/12 text-xs sm:text-sm  sm:w-6/12 items-center bg-white rounded-full p-3">
         <svg
           className="w-7 h-7"
           viewBox="0 0 50 50"

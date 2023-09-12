@@ -155,7 +155,7 @@ const Navbar = () => {
           </button>
         </div>
         <div
-          class={`"items-center justify-between  md:bg-transparent w-full md:flex md:w-auto md:order-1" ${isMenuOpen?'block transition-all duration-300 ease-in-out bg-white text-black rounded-lg':'hidden'}`}
+          class={`"items-center justify-between  md:bg-transparent w-full text-sm md:text-base md:flex md:text-white md:w-auto md:order-1" ${isMenuOpen?'block transition-all duration-300 ease-in-out bg-white text-black rounded-lg':'hidden'}`}
           id="navbar-sticky"
         >
           <ul class="flex flex-col  md:p-0 font-semibold  rounded-lg  md:flex-row md:space-x-8 md:mt-0 ">
